@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DomainDrivenDesign.CQRS.Query
+namespace DomainDrivenDesign.Core.CQRS.Query
 {
     public interface IQueryHandler<in TQuery, out TResponse> where TQuery : IQuery<TResponse>
     {

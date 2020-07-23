@@ -1,11 +1,13 @@
-﻿namespace DomainDrivenDesign.CQRS.Mediator
+﻿namespace DomainDrivenDesign.Core.CQRS
 {
-    using DomainDrivenDesign.CQRS.Command;
-    using DomainDrivenDesign.CQRS.Query;
+    using DomainDrivenDesign.Core.CQRS.Command;
+    using DomainDrivenDesign.Core.CQRS.Interface;
+    using DomainDrivenDesign.Core.CQRS.Query;
     using Railway.NetCore.Core;
+    using Railway.NetCore.Core.Maybe;
     using System;
 
-    public sealed class Mediator
+    public sealed class Mediator : IMediator
     {
         private readonly IServiceProvider _provider;
 
@@ -14,7 +16,7 @@
             _provider = provider;
         }
 
-        public Result Dispatch(ICommand command)
+        public Result Publish(ICommand command)
         {
             Type type = typeof(ICommandHandler<>);
             Type[] typeArgs = { command.GetType() };
@@ -26,7 +28,7 @@
             return result;
         }
 
-        public T Dispatch<T>(IQuery<T> query)
+        public T Publish<T>(IQuery<T> query)
         {
             Type type = typeof(IQueryHandler<,>);
             Type[] typeArgs = { query.GetType(), typeof(T) };

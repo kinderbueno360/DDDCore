@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="DomainDrivenDesign.Core">
+      <HintPath>..\..\..\src\DDDCore\DDDCore\bin\Debug\netstandard2.0\DomainDrivenDesign.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DomainDrivenDesign.CQRS">
+      <HintPath>..\..\..\src\DDDCore.CQRS\DomainDrivenDesign.CQRS\bin\Debug\netstandard2.0\DomainDrivenDesign.CQRS.dll</HintPath>
+    </Reference>
+    <Reference Include="Railway.NetCore">
+      <HintPath>..\..\..\..\Railway.NetCore\src\Railway.NetCore\Railway.NetCore\bin\Debug\netstandard2.0\Railway.NetCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
