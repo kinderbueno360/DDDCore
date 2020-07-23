@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>Carlos Bueno</Authors>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Company>Kinder Bueno</Company>
@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/kinderbueno360/DDDCore</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
+    <AssemblyVersion>0.0.2.0</AssemblyVersion>
   </PropertyGroup>
 
 </Project>
