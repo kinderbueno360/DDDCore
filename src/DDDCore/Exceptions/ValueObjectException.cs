@@ -1,6 +1,6 @@
-﻿namespace DDDCore.Exceptions
+﻿namespace DomainDrivenDesign.Core.Exceptions
 {
-    using DDDCore.Interfaces;
+    using DomainDrivenDesign.Core.Interfaces;
     using System;
     using System.Collections.Generic;
     using System.Text;
