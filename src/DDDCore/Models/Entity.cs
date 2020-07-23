@@ -1,4 +1,4 @@
-﻿namespace DDDCore.Models
+﻿namespace DomainDrivenDesign.Core.Models
 {
     using System;
     using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿namespace DDDCore.Interfaces
+﻿namespace DomainDrivenDesign.Core.Interfaces
 {
     using System;
     using System.Collections.Generic;

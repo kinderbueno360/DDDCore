@@ -1,7 +1,7 @@
-﻿namespace DDDCore.Models
+﻿namespace DomainDrivenDesign.Core.Models
 {
-    using DDDCore.Exceptions;
-    using DDDCore.Interfaces;
+    using DomainDrivenDesign.Core.Exceptions;
+    using DomainDrivenDesign.Core.Interfaces;
     using System;
     using System.Collections.Generic;
     using System.Linq;
