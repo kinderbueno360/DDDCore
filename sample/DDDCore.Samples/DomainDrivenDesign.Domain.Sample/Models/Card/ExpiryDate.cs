@@ -1,11 +1,11 @@
-﻿using DomainDrivenDesign.Core.Exceptions;
-using DomainDrivenDesign.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-
-namespace DomainDrivenDesign.Application.Sample.Models
+﻿namespace DomainDrivenDesign.Domain.Sample.Models
 {
+    using DomainDrivenDesign.Core.Exceptions;
+    using DomainDrivenDesign.Core.Models;
+    using System;
+    using System.Collections.Generic;
+    using System.Text.RegularExpressions;
+
     public class ExpiryDate : ValueObject<ExpiryDate>
     {
         private readonly DateTime _value;

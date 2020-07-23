@@ -1,6 +1,7 @@
-﻿namespace DomainDrivenDesign.Application.Sample.Models
+﻿namespace DomainDrivenDesign.Domain.Sample.Models
 {
     using DomainDrivenDesign.Core.Models;
+    using Railway.NetCore.Core;
     using System;
     using System.Collections.Generic;
     using System.Text;
@@ -19,9 +20,9 @@
         public DateTime CreatedOn { get; protected set; }
 
 
-        public static Payment CreateNewCardPayment(Card card, Money amount, string beneficiaryAlias)
+        public static Result<Payment> CreateNewCardPayment(Card card, Money amount, string beneficiaryAlias)
         {
-            return new Payment(card, amount, beneficiaryAlias);
+            return Result.Success(new Payment(card, amount, beneficiaryAlias));
         }
 
 

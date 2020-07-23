@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DomainDrivenDesign.CQRS.Command
+namespace DomainDrivenDesign.Core.CQRS.Command
 {
     public interface ICommand
     {
+        bool IsValid();
     }
 }

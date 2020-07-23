@@ -1,8 +1,8 @@
-﻿using DomainDrivenDesign.Core.Models;
-using System.Collections.Generic;
-
-namespace DomainDrivenDesign.Application.Sample.Models
+﻿namespace DomainDrivenDesign.Domain.Sample.Models
 {
+    using DomainDrivenDesign.Core.Models;
+    using System.Collections.Generic;
+
     public class CVV : ValueObject<CVV>
     {
         private readonly string _value;

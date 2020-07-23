@@ -1,4 +1,4 @@
-﻿namespace DomainDrivenDesign.Application.Sample.Models
+﻿namespace DomainDrivenDesign.Domain.Sample.Models
 {
     using DomainDrivenDesign.Core.Models;
     using Railway.NetCore.Core;

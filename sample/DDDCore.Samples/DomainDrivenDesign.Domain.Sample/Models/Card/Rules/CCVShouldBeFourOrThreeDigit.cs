@@ -1,22 +1,24 @@
-﻿namespace DomainDrivenDesign.Application.Sample.Models
+﻿namespace DomainDrivenDesign.Domain.Sample.Models
 {
     using DomainDrivenDesign.Core.Interfaces;
     using System.Text.RegularExpressions;
-    public class CardNumberShoulPassRegex : IValidationRule
+
+    public class CCVShouldBeFourOrThreeDigit : IValidationRule
     {
         private readonly string _value;
 
-        internal CardNumberShoulPassRegex(string value)
+        internal CCVShouldBeFourOrThreeDigit(string value)
         {
             _value = value;
         }
-        public string Message => "Card number was not valid";
+
+        public string Message => "CVV should be Four or Three digit";
 
         public bool IsBroken()
         {
             if (_value is null) return true;
 
-            const string RegExForValidation = @"^4[0-9]{12}(?:[0-9]{3})?$";//Visa Card Regex: just for testing purpose
+            const string RegExForValidation = @"^[0-9]{3,4}$";
 
             Regex regex = new Regex(RegExForValidation);
             Match match = regex.Match(_value);

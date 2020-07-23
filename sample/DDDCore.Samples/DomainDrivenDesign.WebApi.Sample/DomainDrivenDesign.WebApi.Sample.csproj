@@ -9,6 +9,23 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DomainDrivenDesign.Application.Sample\DomainDrivenDesign.Application.Sample.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DomainDrivenDesign.Core">
+      <HintPath>..\..\..\src\DDDCore\DDDCore\bin\Debug\netstandard2.0\DomainDrivenDesign.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DomainDrivenDesign.Core.CQRS">
+      <HintPath>..\..\..\src\DDDCore.CQRS\DomainDrivenDesign.CQRS\bin\Debug\netstandard2.0\DomainDrivenDesign.Core.CQRS.dll</HintPath>
+    </Reference>
+    <Reference Include="Railway.NetCore">
+      <HintPath>..\..\..\..\Railway.NetCore\src\Railway.NetCore\Railway.NetCore\bin\Debug\netstandard2.0\Railway.NetCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 

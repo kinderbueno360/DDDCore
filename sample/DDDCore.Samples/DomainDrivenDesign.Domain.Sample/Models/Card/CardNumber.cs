@@ -1,9 +1,9 @@
-﻿using DomainDrivenDesign.Core.Models;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DomainDrivenDesign.Application.Sample.Models
+﻿namespace DomainDrivenDesign.Domain.Sample.Models
 {
+    using DomainDrivenDesign.Core.Models;
+    using System.Collections.Generic;
+
+    using System.Text;
     public class CardNumber : ValueObject<CardNumber>
     {
         private readonly string _value;
