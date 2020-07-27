@@ -7,6 +7,17 @@ This is a Framework designed to give us the Core of DDD to .Net. This Framework 
 
 [How to Build a good one Value Object](https://medium.com/@carlosbueno.kinder/how-to-building-a-good-one-value-object-57b1c7d2c5f0).
 
+## Features
+
+Entity
+Value Object
+Value Object Validations
+Event
+Raise Events (Mediator)
+Commands
+Queries
+MediatirCQRS to dispatch Commands and Queries
+
 
 ## Installation
 
