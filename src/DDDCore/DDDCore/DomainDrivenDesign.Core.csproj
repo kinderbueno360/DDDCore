@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.1.3</Version>
+    <Version>0.2.0</Version>
     <Authors>Carlos Bueno</Authors>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Company>Kinder Bueno</Company>
@@ -12,8 +12,11 @@
     <RepositoryUrl>https://github.com/kinderbueno360/DDDCore</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
-    <AssemblyVersion>0.1.3.0</AssemblyVersion>
-    <FileVersion>0.1.3.0</FileVersion>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+    <FileVersion>0.2.0.0</FileVersion>
+    <PackageReleaseNotes>Add Event class
+Add Event Handler
+Add Mediator to Raise Event</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
