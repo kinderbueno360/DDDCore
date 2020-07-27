@@ -13,14 +13,26 @@ This is a Framework designed to give us the Core of DDD to .Net. This Framework 
 
 ## Features
 
+**DomainDrivenDesign.Core**
 * Entity
 * Value Object
 * Value Object Validations
 * Event
 * Raise Events (Mediator)
+
+**DomainDrivenDesign.Core.CQRS**
 * Commands
 * Queries
 * MediatirCQRS to dispatch Commands and Queries
+
+**DomainDrivenDesign.Core.EventSourcing** (Under development)
+
+## Nuget Packages
+
+[DomainDrivenDesign.Core](https://www.nuget.org/packages/DomainDrivenDesign.Core)
+
+
+[DomainDrivenDesign.Core.CQRS](https://www.nuget.org/packages/DomainDrivenDesign.Core.CQRS)
 
 
 ## Installation
