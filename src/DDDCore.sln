@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainDrivenDesign.Core", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainDrivenDesign.Core.Tests", "DDDCore\DomainDrivenDesign.Core.Tests\DomainDrivenDesign.Core.Tests.csproj", "{F4808CDF-9A83-43D5-A48D-37758888074F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventSourcing", "EventSourcing", "{555B5763-2453-43AD-819D-458D54E04232}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainDrivenDesign.Core.EventSourcing", "DomainDrivenDesign.Core.EventSourcing\DomainDrivenDesign.Core.EventSourcing.csproj", "{321C188D-AD0A-43F3-A758-5406E7AD110D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,10 @@ Global
 		{F4808CDF-9A83-43D5-A48D-37758888074F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4808CDF-9A83-43D5-A48D-37758888074F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4808CDF-9A83-43D5-A48D-37758888074F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{321C188D-AD0A-43F3-A758-5406E7AD110D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{321C188D-AD0A-43F3-A758-5406E7AD110D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{321C188D-AD0A-43F3-A758-5406E7AD110D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{321C188D-AD0A-43F3-A758-5406E7AD110D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,7 @@ Global
 		{93AB89E5-F7F9-4BAF-911A-663161BF65DA} = {B01A7500-996E-4587-ABC9-9AB2DFA842DB}
 		{659BA84E-403C-4D0C-9DA3-97008BDDA609} = {9B97F8E4-3884-4A99-A5D4-24CD6899ED26}
 		{F4808CDF-9A83-43D5-A48D-37758888074F} = {9B97F8E4-3884-4A99-A5D4-24CD6899ED26}
+		{321C188D-AD0A-43F3-A758-5406E7AD110D} = {555B5763-2453-43AD-819D-458D54E04232}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DB65FE4-CC6D-4FE1-8DDB-BF435AA1E9FB}

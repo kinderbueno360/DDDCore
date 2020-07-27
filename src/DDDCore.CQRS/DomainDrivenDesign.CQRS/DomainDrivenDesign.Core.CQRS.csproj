@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-	<Version>0.0.1</Version>
+	<Version>0.2.0</Version>
     <AssemblyName>DomainDrivenDesign.Core.CQRS</AssemblyName>
     <Company>Carlos Bueno</Company>
     <Authors>Carlos Bueno</Authors>
@@ -11,9 +11,10 @@
     <PackageProjectUrl>https://github.com/kinderbueno360/DDDCore</PackageProjectUrl>
     <RepositoryUrl>https://github.com/kinderbueno360/DDDCore</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <AssemblyVersion>0.0.1.0</AssemblyVersion>
+    <AssemblyVersion>0.0.2.0</AssemblyVersion>
     <FileVersion>0.0.1.0</FileVersion>
     <NeutralLanguage>en</NeutralLanguage>
+    <PackageReleaseNotes>Changed Mediator to MediatorCQRS to improve Raive Event</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
