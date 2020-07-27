@@ -6,9 +6,10 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
+    using System.Threading.Tasks;
 
     public interface IMediator
     {
-        Result Raise(Event @event);
+        Task Raise(Event @event);
     }
 }

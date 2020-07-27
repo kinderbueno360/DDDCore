@@ -6,6 +6,7 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
+    using System.Threading.Tasks;
 
     public class Mediator : IMediator
     {
@@ -16,14 +17,14 @@
             _provider = provider;
         }
 
-        public Result Raise(Event @event)
+        public Task Raise(Event @event)
         {
             Type type = typeof(IEventHandler<>);
             Type[] typeArgs = { @event.GetType() };
             Type handlerType = type.MakeGenericType(typeArgs);
 
             dynamic handler = _provider.GetService(handlerType);
-            Result result = handler.Handler((dynamic)@event);
+            Task result = handler.Handler((dynamic)@event);
 
             return result;
         }

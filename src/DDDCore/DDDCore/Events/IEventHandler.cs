@@ -10,10 +10,11 @@ namespace DomainDrivenDesign.Core.Events
     using System;
     using System.Collections.Generic;
     using System.Text;
+    using System.Threading.Tasks;
 
     public interface IEventHandler<TEvent>
         where TEvent : Event
     {
-        Result Handler(Maybe<TEvent> @event);
+        Task Handler(Maybe<TEvent> @event);
     }
 }
