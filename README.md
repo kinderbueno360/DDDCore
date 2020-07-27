@@ -3,6 +3,38 @@
 This is a Framework designed to give us the Core of DDD to .Net. This Framework is using .Net Standard 2.
 
 
+## Articles about this Framework
+
+[How to Build a good one Value Object](https://medium.com/@carlosbueno.kinder/how-to-build-a-good-one-value-object-c45ed80ee8a9).
+
+## Documentation (Wiki)
+
+[Go to Documentation](https://github.com/kinderbueno360/DDDCore/wiki)
+
+## Features
+
+**DomainDrivenDesign.Core**
+* Entity
+* Value Object
+* Value Object Validations
+* Event
+* Raise Events (Mediator)
+
+**DomainDrivenDesign.Core.CQRS**
+* Commands
+* Queries
+* MediatirCQRS to dispatch Commands and Queries
+
+**DomainDrivenDesign.Core.EventSourcing** (Under development)
+
+## Nuget Packages
+
+[DomainDrivenDesign.Core](https://www.nuget.org/packages/DomainDrivenDesign.Core)
+
+
+[DomainDrivenDesign.Core.CQRS](https://www.nuget.org/packages/DomainDrivenDesign.Core.CQRS)
+
+
 ## Installation
 
 You can install using nuget Package Manager
