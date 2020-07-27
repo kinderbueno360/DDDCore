@@ -9,7 +9,7 @@ This is a Framework designed to give us the Core of DDD to .Net. This Framework 
 
 ## Documentation (Wiki)
 
-[Go to Documentation](https://github.com/kinderbueno360/DDDCore/wiki/CQRS-Query)
+[Go to Documentation](https://github.com/kinderbueno360/DDDCore/wiki)
 
 ## Features
 
