@@ -1,11 +1,14 @@
 ﻿namespace DomainDrivenDesign.Core.Models
 {
+    using DomainDrivenDesign.Core.Events;
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
 
     public abstract class Entity : EntityBase<Guid>
     {
+
         public static bool operator ==(Entity a, Entity b)
         {
             if (ReferenceEquals(a, null) && ReferenceEquals(b, null))

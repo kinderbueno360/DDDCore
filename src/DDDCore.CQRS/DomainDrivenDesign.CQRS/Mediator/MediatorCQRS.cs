@@ -7,11 +7,11 @@
     using Railway.NetCore.Core.Maybe;
     using System;
 
-    public sealed class Mediator : IMediator
+    public class MediatorCQRS : Mediator , IMediatorCQRS
     {
         private readonly IServiceProvider _provider;
 
-        public Mediator(IServiceProvider provider)
+        public MediatorCQRS(IServiceProvider provider) : base(provider)
         {
             _provider = provider;
         }
@@ -27,6 +27,7 @@
 
             return result;
         }
+
 
         public T Publish<T>(IQuery<T> query)
         {

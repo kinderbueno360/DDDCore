@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DomainDrivenDesign.Application.Sample.Command;
+using DomainDrivenDesign.Application.Sample.EventHandler;
 using DomainDrivenDesign.Core.CQRS;
 using DomainDrivenDesign.Core.CQRS.Command;
 using DomainDrivenDesign.Core.CQRS.Interface;
+using DomainDrivenDesign.Core.Events;
+using DomainDrivenDesign.Domain.Sample.Events;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,8 +34,16 @@ namespace DomainDrivenDesign.WebApi.Sample
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<IMediator, Mediator>();
+            
+            // Inject Mediator
+            services.AddScoped<IMediatorCQRS, MediatorCQRS>();
+
+            // Inject Command Handlers
             services.AddScoped<ICommandHandler<ProcessCardPaymentCommand>, ProcessCardPaymentCommandHandler>();
+
+            // Inject Event handlers
+            services.AddScoped<IEventHandler<PaymentCreated>, PaymentCreatedEventHandler>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DDD Core", Version = "v1" });
@@ -67,3 +78,4 @@ namespace DomainDrivenDesign.WebApi.Sample
         }
     }
 }
+

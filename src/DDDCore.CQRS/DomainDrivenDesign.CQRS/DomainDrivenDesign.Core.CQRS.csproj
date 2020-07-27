@@ -21,4 +21,8 @@
     <PackageReference Include="Railway.NetCore" Version="0.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\DDDCore\DDDCore\DomainDrivenDesign.Core.csproj" />
+  </ItemGroup>
+
 </Project>

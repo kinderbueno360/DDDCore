@@ -13,9 +13,9 @@
     [Route("[controller]")]
     public class PaymentController : ControllerBase
     {
-        protected IMediator _mediator;
+        protected IMediatorCQRS _mediator;
 
-        public PaymentController(IMediator mediator)
+        public PaymentController(IMediatorCQRS mediator)
         {
             _mediator = mediator;
         }

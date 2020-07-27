@@ -1,6 +1,7 @@
 ﻿namespace DomainDrivenDesign.Domain.Sample.Models
 {
     using DomainDrivenDesign.Core.Models;
+    using DomainDrivenDesign.Domain.Sample.Events;
     using Railway.NetCore.Core;
     using System;
     using System.Collections.Generic;
@@ -32,6 +33,7 @@
             this.Amount = amount;
             this.BeneficiaryAlias = beneficiaryAlias;
             this.CreatedOn = DateTime.Now;
+            Raise(new PaymentCreated());
         }
     }
 }
