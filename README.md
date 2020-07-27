@@ -5,7 +5,7 @@ This is a Framework designed to give us the Core of DDD to .Net. This Framework 
 
 ## Articles about this Framework
 
-[How to Build a good one Value Object](https://medium.com/@carlosbueno.kinder/how-to-building-a-good-one-value-object-57b1c7d2c5f0).
+[How to Build a good one Value Object](https://medium.com/@carlosbueno.kinder/how-to-build-a-good-one-value-object-c45ed80ee8a9).
 
 ## Documentation (Wiki)
 
