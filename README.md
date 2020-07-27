@@ -9,14 +9,14 @@ This is a Framework designed to give us the Core of DDD to .Net. This Framework 
 
 ## Features
 
-Entity
-Value Object
-Value Object Validations
-Event
-Raise Events (Mediator)
-Commands
-Queries
-MediatirCQRS to dispatch Commands and Queries
+* Entity
+* Value Object
+* Value Object Validations
+* Event
+* Raise Events (Mediator)
+* Commands
+* Queries
+* MediatirCQRS to dispatch Commands and Queries
 
 
 ## Installation
