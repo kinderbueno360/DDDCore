@@ -7,6 +7,8 @@ This is a Framework designed to give us the Core of DDD to .Net. This Framework 
 
 [How to Build a good one Value Object](https://medium.com/@carlosbueno.kinder/how-to-build-a-good-one-value-object-c45ed80ee8a9).
 
+[What is Domain Services? How to use it?](https://medium.com/@carlosbueno.kinder/what-is-domain-services-how-to-use-it-6a590e26e29a).
+
 ## Videos (English)
 
 [DDD Course - Class 00 - Overview - NetCore C#](https://www.youtube.com/watch?v=vyMELNE03GA).
