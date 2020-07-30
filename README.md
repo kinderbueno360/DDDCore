@@ -14,6 +14,7 @@ This is a Framework designed to give us the Core of DDD to .Net. This Framework 
 ## Videos (Portuguese)
 
 [DDD Course - Class 00 - Overview - NetCore C#](https://www.youtube.com/watch?v=vyMELNE03GA).
+
 [DDD Course - Class 01 - Modeling Best Practices](https://www.youtube.com/watch?v=WzRiy07j_50).
 
 ## Documentation (Wiki)
