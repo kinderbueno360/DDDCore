@@ -18,7 +18,7 @@ namespace DomainDrivenDesign.Core.Models
 
         public override bool Equals(object obj)
         {
-            var compareTo = obj as Entity;
+            var compareTo = obj as EntityBase<T>;
 
             if (ReferenceEquals(this, compareTo)) return true;
             if (ReferenceEquals(null, compareTo)) return false;
